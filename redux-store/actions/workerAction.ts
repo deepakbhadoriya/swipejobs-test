@@ -28,9 +28,7 @@ export const getWorkerMatchingJobs = () => async (dispatch: DispatchType) => {
 
 export const workerAcceptJob =
   (jobId: string) => async (dispatch: Function) => {
-    const res = await axios.get(
-      `${BASE_URL}/worker/${WORKER_ID}/job/${jobId}/accept`
-    )
+    await axios.get(`${BASE_URL}/worker/${WORKER_ID}/job/${jobId}/accept`)
     dispatch(
       setAlert({ msg: 'You have accepted the JOB', alertType: 'success' })
     )
@@ -38,9 +36,7 @@ export const workerAcceptJob =
 
 export const workerRejectJob =
   (jobId: string) => async (dispatch: Function) => {
-    const res = await axios.get(
-      `${BASE_URL}/worker/${WORKER_ID}/job/${jobId}/reject`
-    )
+    await axios.get(`${BASE_URL}/worker/${WORKER_ID}/job/${jobId}/reject`)
     dispatch(
       setAlert({ msg: 'You have rejected the JOB', alertType: 'warning' })
     )

@@ -3,11 +3,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "axios": "^0.27.2",
+    "cypress": "^9.7.0",
     "dayjs": "^1.11.2",
     "next": "latest",
     "react": "^18.1.0",
