@@ -1,0 +1,15 @@
+.container {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.jobsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 40px auto 40px;
+  justify-content: center;
+}
